@@ -5,7 +5,7 @@ dependencies:
   - python=2.7
   - dit==1.2.3
   #- ipython==5.3.0
-  - openmdao<2
+  - openmdao # <2
   - networkx
   - cython
   - scipy

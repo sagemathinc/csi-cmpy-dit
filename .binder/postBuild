@@ -1,4 +1,5 @@
-git clone git@vcs.cse.ucdavis.edu:cmpy.git --config core.sshCommand="ssh -i /home/user/.binder/key.pub -o 'StrictHostKeyChecking=no' -vv"
+chmod go-rwx $HOME/.binder/key.pub
+git clone git@vcs.cse.ucdavis.edu:cmpy.git --config core.sshCommand="ssh -i $HOME/.binder/key.pub -o 'StrictHostKeyChecking=no' -vv"
 cd cmpy
 python2 setup.py install --cython
 

@@ -1,7 +1,13 @@
-chmod go-rwx $HOME/.binder/key.pub
-git clone git@vcs.cse.ucdavis.edu:cmpy.git --config core.sshCommand="ssh -i $HOME/.binder/key.pub -o 'StrictHostKeyChecking=no' -vv"
+#chmod go-rwx $HOME/.binder/key.pub
+#git clone git@vcs.cse.ucdavis.edu:cmpy.git --config core.sshCommand="ssh -i $HOME/.binder/key.pub -o 'StrictHostKeyChecking=no' -vv"
+
+cd .binder
+tar xf cmpy.tgz
+
 cd cmpy
 python2 setup.py install --cython
 
-#rm -rf .git/
-#rm -rf .binder/
+# cleanup
+cd
+rm -rf .git/
+rm -rf .binder/

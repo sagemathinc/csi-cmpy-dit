@@ -14,3 +14,4 @@ dependencies:
   - pip
   - pip:
     - openmdao<2
+    - yapf

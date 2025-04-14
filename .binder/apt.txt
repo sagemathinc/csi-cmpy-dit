@@ -1,4 +1,4 @@
-python-dev
+python2-dev
 graphviz
 libgraphviz-dev
 pkg-config

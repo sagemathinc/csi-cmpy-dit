@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=2.7
   - dit==1.2.3
+  - boltons==20.0.0 # dit uses it, and if unrestricted, an incompatible version is installed
   - ipython==5.3.0
   - networkx==1.11
   - cython
